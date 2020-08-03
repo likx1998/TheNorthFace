@@ -1,0 +1,852 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    border: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.oboxtop {
+    height: 80px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.top-nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 9999;
+}
+
+.top-nav a {
+    font-size: 12px;
+}
+
+.top-nav a:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    float: left;
+    position: relative;
+}
+
+.logo .img {
+    height: 80px;
+    display: block;
+}
+
+.nav-right {
+    padding-left: 80px;
+    width: 1439px;
+    height: 100%;
+}
+
+.on-nav {
+    width: 1439px;
+    height: 40px;
+    background: #222;
+}
+
+.the-left {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.the-left a {
+    padding: 0 22px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.the-left .one {
+    background: white;
+    color: black;
+}
+
+.the-right {
+    width: 505px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.the-right img {
+    width: 20px;
+    height: 20px;
+}
+
+.the-right .car {
+    position: relative;
+    width: 90px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    line-height: 46px;
+}
+
+
+/* 购物车隐藏盒子 */
+
+.s-box {
+    width: 300px;
+    height: 580px;
+    position: fixed;
+    right: 0;
+    background: #f7f7f7;
+    top: 40px;
+    z-index: 2;
+    display: none;
+}
+
+.s-box i {
+    font-style: normal
+}
+
+.s-box .picbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.s-box.picbox {
+    display: none;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e5e5e5;
+    box-sizing: content-box;
+}
+
+.s-box .check {
+    width: 86%;
+    margin: 10px auto;
+    text-align: center;
+    clear: both;
+    background: #e40012;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.s-box p {
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 auto;
+    color: #767676;
+}
+
+.s-box .closebtn {
+    border: 1px solid black;
+    color: #767676;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
+    background-size: 100%;
+    text-align: center;
+    line-height: 14px;
+}
+
+.the-right .car .yuan {
+    height: 15px;
+    line-height: 14px;
+    padding: 1px 4px 1px 4px;
+    position: absolute;
+    right: 16px;
+    top: 4px;
+    background: red;
+}
+
+.down-left {
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.down-left a {
+    color: black;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.active {
+    opacity: 0.8;
+    background: #f7f7f7;
+}
+
+.down-right {
+    position: relative;
+    margin-top: 13px;
+    margin-left: 116px;
+    float: left;
+}
+
+.down-right .top {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    background: #e2e2e2;
+}
+
+.down-right .bottom {
+    border: 0;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    width: 400px;
+    padding-left: 30px;
+    color: #000;
+    font-size: 14px;
+    background: #e2e2e2;
+}
+
+
+/*二级菜单  */
+
+.hidebox {
+    display: none;
+    background: #f7f7f7;
+    padding: 40px 0;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.hidebox a {
+    color: black;
+}
+
+.box-center {
+    overflow: hidden;
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.center {
+    min-height: 260px;
+    border-right: 1px solid #e5e5e5;
+    margin-left: -1px;
+    float: left;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.ulwap {
+    float: left;
+    padding: 0 10px;
+}
+
+.ulwap .tis {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.ulwap li {
+    margin: 10px 0;
+}
+
+.center1 li>* {
+    font-size: 12px !important;
+    text-align: left;
+    height: auto;
+    line-height: 14px;
+    padding: 2px 0;
+    color: #000;
+}
+
+
+/* !! */
+
+
+/* !! */
+
+
+/* !! */
+
+
+/* !! */
+
+
+/* !! */
+
+
+/* !! */
+
+
+/* !! */
+
+
+/* !! */
+
+
+/* 图片 */
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 474px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slideshow ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.slideshow ul li {
+    width: 1519px;
+    height: 474.688px;
+}
+
+
+/* 左右箭头 */
+
+.left,
+.right {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+
+
+/* 小圆圈 */
+
+.slideshow .round {
+    position: absolute;
+    bottom: 0px;
+    height: 17.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow .round span {
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.tab {
+    background: white;
+}
+
+
+/* 内容一 */
+
+.ones {
+    width: 1140px;
+    height: 312px;
+    margin: 0px auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.ones-left,
+.ones-right {
+    width: 562px;
+    height: 295px;
+}
+
+.ones img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 详情页头部点击可以切换 */
+
+.listhead {
+    width: 1140px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.listhead ul {
+    width: 726px;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+    margin: 10px 207px 0px 207px;
+    color: #787878;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listhead ul li {
+    width: auto;
+    height: 42px;
+    padding: 0px 7.25px;
+    margin: 0px 49px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    line-height: 42px;
+}
+
+.listhead ul li a {
+    color: #000;
+    font-size: 16px;
+}
+
+
+/* 第二块内容 */
+
+.twos {
+    width: 1140px;
+    /* height: 557.075px; */
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.twos .listul {
+    margin: 10px 0px;
+    display: flex;
+}
+
+.twos .listul li {
+    width: 275px;
+    padding: 5px;
+}
+
+.twos .listul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 第三块内容轮播图 */
+
+.maps {
+    width: 1140px;
+    height: 401.6px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.maps h3 {
+    display: block;
+    margin: 30px 0px;
+    font-size: 20px;
+    height: 21.6px;
+}
+
+.maps .maps-list {
+    position: relative;
+    width: 1139px;
+    height: 350px;
+    padding-left: 1px;
+    overflow: hidden;
+}
+
+.maps .maps-list .form1 {
+    position: absolute;
+    left: 0px;
+    width: 1139px;
+    height: 350px;
+    background: white;
+}
+
+.maps .maps-list .form1.parcel {
+    display: flex;
+}
+
+.maps .maps-list .form1 .parcel a {
+    float: left;
+    width: 233px;
+    margin-right: 19px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 318px;
+}
+
+.maps .maps-list .form1 .parcel a img {
+    width: 238px;
+    height: 238px;
+}
+
+.maps .maps-list .form1 .parcel a p {
+    height: 45px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.moner span {
+    font-size: 12px;
+}
+
+
+/* form2 */
+
+.maps .maps-list .form2 {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 1139px;
+    height: 350px;
+    background: white;
+}
+
+.maps .maps-list .form2.parcel {
+    display: flex;
+}
+
+.maps .maps-list .form2 .parcel a {
+    float: left;
+    width: 233px;
+    margin-right: 19px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 318px;
+}
+
+.maps .maps-list .form2 .parcel a img {
+    width: 238px;
+    height: 238px;
+}
+
+.maps .maps-list .form2 .parcel a p {
+    height: 45px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.moner span {
+    font-size: 12px;
+}
+
+
+/* 两个小按钮 */
+
+.maps .slide-nav-arrow {
+    position: absolute;
+    top: 51%;
+    padding: 0 15%;
+    margin-top: -25px;
+}
+
+.boxleft,
+.boxright {
+    position: absolute;
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    text-decoration: none;
+}
+
+.boxleft {
+    left: -90px;
+}
+
+.boxright {
+    right: -870px
+}
+
+.pagination {
+    display: flex;
+    position: absolute;
+    left: 47%;
+    bottom: -35px;
+    margin: 20px 0;
+}
+
+.pagination span {
+    border: 1px solid #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.active1 {
+    background: black;
+}
+
+
+/* 客服 */
+
+.the-imporant {
+    width: 100%;
+    margin-top: 30px;
+    background: #f9f9f9;
+    padding: 50px 0px;
+}
+
+.bigbox {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.phone {
+    width: 470px;
+    height: 142.275px;
+    float: left;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.phone img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.phone .time {
+    padding: 10px 0;
+    color: #767676;
+    font-size: 14px;
+}
+
+.phone h1 {
+    text-align: center;
+    margin: 0;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #767676;
+}
+
+.footer-logo {
+    width: 470px;
+    height: 123px;
+}
+
+.footer-logo img {
+    width: 240px;
+}
+
+
+/* 尾部 */
+
+.footers {
+    width: 100%;
+    height: 420px;
+    background: #000;
+}
+
+.footer-c {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 60px;
+    color: #707070;
+}
+
+.footer-t {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    height: 216px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #707070;
+}
+
+.t-left {
+    width: 200px;
+    color: #707070;
+}
+
+.t-left li {
+    width: 100px;
+    padding: 20px 0;
+    color: #767676;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-ewm {
+    float: left;
+    width: 270px;
+    height: 216px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-ewm img {
+    width: 95px;
+    height: 95px;
+}
+
+.lei {
+    display: flex;
+    flex-direction: column
+}
+
+.xl-t {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #707070;
+    border-radius: 25px;
+    padding: 0 10px;
+    color: #707070;
+    text-align: center;
+}
+
+
+/* 固定定位 */
+
+.f-box {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 60px;
+    height: auto;
+    z-index: 9;
+    margin-top: 1%;
+}
+
+.f-box .f-top {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+
+/* 导航栏隐藏的盒子 */
+
+#ewm-l {
+    position: absolute;
+    height: 186px;
+    width: 156px;
+    right: 61px;
+    top: -63px;
+    background: #333;
+    opacity: 0.9;
+    display: none;
+}
+
+#ewm-l div {
+    width: 110px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#ewm-l img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 9px;
+    display: block
+}
+
+#ewm-l p {
+    margin: 0;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.f-box .f-top .nav-top {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    position: relative;
+    margin-bottom: 1px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-nav>div .nav-background {
+    height: 60px;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    top: 0;
+}
+
+.f-box .f-top span {
+    border-radius: 6px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-box .f-top span img {
+    width: 100%;
+    height: 100%;
+}
+
+.f-box .f-top span a {
+    width: 42px;
+    height: 37px;
+}

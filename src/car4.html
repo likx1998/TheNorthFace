@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/car.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="cart-head">
+        <div class="logo">
+            <img src="https://img1.thenorthface.com.cn/themes/tnf/images/tnf-logo.jpg" alt="">
+        </div>
+        <div class="cart-right">
+            <span class="cart-text">购物车</span>
+            <div style="color:#000; float: right; margin: 20px 10px;">
+                <a href="" class="f1" style="color:#000">登录</a>
+                <a href="" class="f1" style="color:#000">/注册</a>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="content-out">
+        <div class="main">
+            <div class="steps">
+                <div class="step-1">
+                    <span>
+                        <i>1</i>
+                        购物车
+                    </span>
+                </div>
+                <div class="step-1" class="sd2" style="background: #cccc;">
+                    <span style="color: #767676;">
+                        <i>2</i>
+                       填写和提交订单信息 
+                    </span>
+                </div>
+                <div class="step-1" class="sd2" style="background: #cccc;">
+                    <span style="color:#767676">
+                        <i>3</i>
+                        成功提交订单
+                    </span>
+                </div>
+            </div>
+            <!-- from最重要内容 -->
+            <div class="from-box">
+
+                <form action="">
+                    <table class="cart_main">
+                        <thead>
+                            <tr>
+                                <th width='62'><label class="cur">
+                                    <input type="checkbox">
+                                &nbsp;全选</label></th>
+                                <th width:350px>商品</th>
+                                <th width:175px>单价</th>
+                                <th width:175px>数量</th>
+                                <th width:175px>小计</th>
+                                <th width:193px>操作</th>
+                            </tr>
+                        </thead>
+
+                    </table>
+                    <!-- 渲染整块拉过去 -->
+                    <div class="cart-product ">
+                        <input type="checkbox" style="margin-left: 15px;margin-top: 50px;">
+                        <div class="p-left">
+                            <div class="pic">
+                                <img src="" alt="">
+                            </div>
+                            <span class="p-title">
+                                TheNorthFace北面徒步鞋女户外防水抓地上新|47AZ
+                            </span>
+                        </div>
+                        <div class="p-right">
+                            <ul>
+                                <li style="padding-top: 40px;" class="p-money">
+                                    <p>￥1498.00</p>
+                                </li>
+                                <li style="padding-top: 40px;" class="p-num">
+                                    <div class="jiaan">
+                                        <a href="javascript:;" class="jian">-</a>
+                                        <input type="text" value="1">
+                                        <a href="javascript:;" class="jia">+</a>
+                                    </div>
+                                    <span class="warn-message">
+                                        余量有限
+                                    </span>
+                                </li>
+                                <li style="padding-top: 40px;" class="p-subtotal">
+                                    ￥1498.00
+                                </li>
+                                <li style="padding-top: 40px;" class="p-action">
+                                    <a href="">收藏</a>
+                                    <i>|</i>
+                                    <a href="" class="remove">移除</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </form>
+                <!-- 计算价钱 -->
+                <div class="sum-bigbox">
+                    <div class="sum-top">
+                        <div class="s-left">
+                        </div>
+                        <div class="s-right">
+                            <!-- 渲染 -->
+                            <span class="label">
+                                        商品金额：
+                                    </span>
+                            <span class="price">
+                                        ￥598.00
+                                    </span>
+                            <span class="label1">
+                                        商品总计：
+                                    </span>
+                            <span class="price1">
+                                        ￥598.00
+                                    </span>
+                        </div>
+
+
+                        <!-- //按钮 -->
+                        <div>
+                            <div class="sum-btn">
+                                <button class="btn-a">继续购物</button>
+                                <button class="btn-b">下单结算</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

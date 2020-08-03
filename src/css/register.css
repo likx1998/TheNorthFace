@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    padding: 10px 19px;
+    margin-right: 0;
+}
+
+.content {
+    width: 100%;
+    height: 500px;
+    background: url('https://img1.thenorthface.com.cn/themes/tnf/images/reg.jpg') no-repeat top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0
+}
+
+.top {
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.top .log {
+    width: 100px;
+    height: 80px;
+}
+
+.top .log img {
+    width: 100%;
+    height: 100%;
+}
+
+.top .logoname {
+    font-size: 28px;
+    color: #000000;
+    margin-left: 32px;
+}
+
+.middle {
+    position: relative;
+    width: 100%;
+}
+
+.middle .layout {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    z-index: 999;
+}
+
+.middle .layout .page {
+    position: absolute;
+    background: #ffffff;
+    top: 10px;
+    right: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.middle .layout .page .logbox {
+    padding: 35px 60px;
+}
+
+.middle .layout .page .logbox .title {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.middle .layout .page .logbox .inputbox {
+    margin-top: 35px;
+}
+
+.middle .layout .page .logbox .inputbox li {
+    margin-bottom: 20px;
+    position: relative;
+    color: #666;
+    font-size: 100%;
+}
+
+.input1,
+.input2 {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #A5A5A5;
+}
+
+.middle .layout .page .logbox .inputbox li .btn {
+    width: 100%;
+    height: 36px;
+    background: #fd0000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.middle .layout .page .logbox .Lr {
+    margin-top: 50px;
+    display: flex;
+}
+
+.middle .layout .page .logbox .Lr span {
+    margin: 0px 20px;
+}

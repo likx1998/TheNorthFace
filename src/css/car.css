@@ -1,0 +1,333 @@
+    /* 头部 */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .cart-head {
+        height: 60px;
+        border-bottom: 1px solid #dfdfdf;
+        position: relative;
+    }
+    
+    .cart-head .logo {
+        width: 60px;
+        height: 48px;
+        float: left;
+    }
+    
+    .logo img {
+        display: block;
+        width: 60px;
+        height: 48px;
+    }
+    
+    .cart-head .cart-right {
+        height: 60px;
+        padding-left: 80px;
+    }
+    
+    .cart-head .cart-right a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .cart-head .cart-text {
+        height: 60px;
+        line-height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    /* 内容 */
+    
+    .content-out {
+        width: 1160px;
+        padding-bottom: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .steps {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .steps .step-1 {
+        width: 33%;
+        background: #767676;
+    }
+    
+    .step-1 span {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0 10px; */
+        font-size: 16px;
+        padding: 3px 10px;
+    }
+    
+    .step-1 span i {
+        font-style: normal;
+        width: 22px;
+        margin-right: 8px;
+        margin-left: -25px;
+    }
+    
+    .steps .step-1 {
+        width: 33%;
+        background: #767676;
+    }
+    
+    .step-1 span {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0 10px; */
+        font-size: 16px;
+        padding: 3px 10px;
+    }
+    
+    .step-1 span i {
+        font-style: normal;
+        width: 22px;
+        margin-right: 8px;
+        margin-left: -25px;
+    }
+    /* ！！ */
+    
+    .from-box {
+        border: 1px solid #efefef;
+    }
+    
+    .cart_main {
+        width: 100%;
+        table-layout: fixed;
+        word-break: break-all;
+    }
+    
+    .cart-main thead {
+        background-color: #f2f2f2;
+        color: #a5a5a5;
+    }
+    
+    .cart-main thead tr {
+        height: 37px;
+    }
+    
+    .cart_main tr th {
+        font-weight: 400;
+        color: #a5a5a5;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    label {
+        font-weight: normal;
+    }
+    
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .cart-product {
+        height: 150px;
+        display: flex;
+        border-bottom: 1px solid #efefef;
+    }
+    
+    .cart-product td {
+        padding-top: 15px;
+        padding-bottom: 8px;
+    }
+    
+    .cart-main .cart-item {
+        border-bottom: 1px solid #efefef;
+    }
+    
+    .p-left {
+        display: flex;
+        width: 28%;
+    }
+    
+    .p-title {
+        width: 200px;
+        font-size: 13px;
+        margin-top: 20px;
+        line-height: 20px;
+        color: #767676;
+    }
+    
+    .pic {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        margin-left: 20px;
+        text-align: center;
+        font-family: Arial;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .pic img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .p-right {
+        width: 72%;
+    }
+    
+    .p-right ul {
+        align-items: center;
+    }
+    
+    .p-right li {
+        float: left;
+        list-style: none;
+    }
+    
+    .jiaan {
+        width: 74px;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+    }
+    
+    .jiaan input {
+        width: 30px;
+        height: 21px;
+        line-height: 21px;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #a9a9a9;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .jiaan a {
+        width: 20px;
+        height: 21px;
+        overflow: hidden;
+        border: 1px solid #a9a9a9;
+        text-align: center;
+        font: 14px/18px simsun, serif;
+    }
+    
+    .warn-message {
+        clear: both;
+        width: 74px;
+        margin: 2px auto;
+        text-align: center;
+        color: #fff;
+        background-color: #ef4521;
+        display: block;
+    }
+    
+    .p-money {
+        width: 174px;
+        height: 122px;
+        font-size: 12px;
+        color: #767676;
+        margin-left: 13px;
+    }
+    
+    .p-num {
+        width: 174px;
+        height: 122px;
+    }
+    
+    .p-subtotal {
+        margin-left: 38px;
+        width: 174px;
+        height: 122px;
+        text-align: center;
+        color: #ef4521;
+    }
+    
+    .p-action {
+        margin-left: 30px;
+        width: 192px;
+        height: 122px;
+        text-align: center;
+    }
+    
+    .p-action a {
+        text-decoration: none;
+        color: #026eb7;
+    }
+    
+    .sum-top {
+        height: 130px;
+    }
+    
+    .sum-top .s-right {
+        width: 370px;
+        height: 72px;
+        float: right;
+    }
+    
+    .label,
+    .label1 {
+        padding-top: 10px;
+        color: #8c8c8c;
+        font-size: 14px;
+        float: left;
+        text-align: right;
+        width: 200px;
+    }
+    
+    .price,
+    .price1 {
+        float: left;
+        text-align: left;
+        width: 150px;
+        padding-left: 5px;
+        color: #fe2000;
+        font-size: 20px;
+        line-height: 34px;
+    }
+    
+    .sum-btn {
+        float: right;
+        width: 360px;
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    .s-left {
+        width: 760px;
+        height: 72px;
+        float: left;
+    }
+    
+    .btn-a,
+    .btn-b {
+        height: 40px;
+        line-height: 40px;
+        width: 150px;
+        text-align: center;
+        border: 1px solid #dddddd;
+        margin-right: 10px;
+        float: left;
+    }
+    
+    .btn-b {
+        background: #f00000;
+        filter: none;
+        color: #fff;
+    }
