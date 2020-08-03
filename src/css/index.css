@@ -238,8 +238,7 @@ li {
 
 /*二级菜单  */
 
-.hidebox {
-    display: none;
+.hideboxking {
     background: #f7f7f7;
     padding: 40px 0;
     position: fixed;
@@ -248,6 +247,11 @@ li {
     right: 0;
     overflow: hidden;
     z-index: 999;
+    display: none;
+}
+
+.hidebox {
+    display: none;
 }
 
 .hidebox a {
@@ -444,8 +448,11 @@ li {
     padding: 0px 7.25px;
     margin: 0px 49px;
     text-align: center;
-    border-bottom: 2px solid black;
     line-height: 42px;
+}
+
+.logo-k {
+    border-bottom: 2px solid black;
 }
 
 .listhead ul li a {
@@ -458,7 +465,8 @@ li {
 
 .twos {
     width: 1140px;
-    /* height: 557.075px; */
+    display: flex;
+    overflow: hidden;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -476,6 +484,10 @@ li {
 .twos .listul li img {
     width: 100%;
     height: 100%;
+}
+
+.logo-l {
+    display: none;
 }
 
 
