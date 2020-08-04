@@ -7,8 +7,8 @@ define(['index'], function(index) { //依赖index模块的功能
                 constructor() {
                     this.arryd = [] //默认排序的数组
                     this.array = [] //排序过的数组
-                    this.prev = null
-                    this.next = null
+                    this.prev = null;
+                    this.next = null;
                     this.plist = $('.product-list')
 
                 }
