@@ -499,8 +499,18 @@ li {
     color: #333;
 }
 
-
-/* 客服 */
+.anniu span {
+    float: left;
+    display: inline;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #333;
+    background-color: #FFF;
+    color: #333;
+}
 
 
 /* 客服 */
@@ -719,4 +729,8 @@ li {
 .f-box .f-top span a {
     width: 42px;
     height: 37px;
+}
+
+.hide {
+    display: none;
 }

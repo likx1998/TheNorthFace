@@ -6,7 +6,6 @@
 a {
     text-decoration: none;
     color: white;
-    font-size: 12px;
 }
 
 input {
@@ -17,11 +16,29 @@ li {
     list-style: none;
 }
 
-.top-nav {
-    width: 100%;
+.oboxtop {
     height: 80px;
     position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.top-nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     overflow: hidden;
+    background: #fff;
+    z-index: 9999;
+}
+
+.top-nav a {
+    font-size: 12px;
+}
+
+.top-nav a:hover {
+    opacity: 0.8;
 }
 
 .logo {
@@ -31,8 +48,7 @@ li {
     position: relative;
 }
 
-.logo img {
-    width: 100px;
+.logo .img {
     height: 80px;
     display: block;
 }
@@ -84,28 +100,97 @@ li {
 }
 
 .the-right .car {
+    position: relative;
     width: 90px;
     height: 40px;
     background: white;
     text-align: center;
     line-height: 46px;
-    position: relative;
 }
 
-.the-right .car span {
-    width: 14px;
-    height: 15px;
+
+/* 购物车隐藏盒子 */
+
+.s-box {
+    width: 300px;
+    height: 580px;
+    position: fixed;
+    right: 0;
+    background: #f7f7f7;
+    top: 40px;
+    z-index: 2;
+    display: none;
+}
+
+.s-box i {
+    font-style: normal
+}
+
+.s-box .picbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.s-box.picbox {
+    display: none;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e5e5e5;
+    box-sizing: content-box;
+}
+
+.s-box .check {
+    width: 86%;
+    margin: 10px auto;
+    text-align: center;
+    clear: both;
+    background: #e40012;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.s-box p {
     display: block;
+    width: 90%;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 auto;
+    color: #767676;
+}
+
+.s-box .closebtn {
+    border: 1px solid black;
+    color: #767676;
     position: absolute;
-    top: 4px;
+    right: 10px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
+    background-size: 100%;
+    text-align: center;
+    line-height: 14px;
+}
+
+.the-right .car .yuan {
+    height: 15px;
+    line-height: 14px;
+    padding: 1px 4px 1px 4px;
+    position: absolute;
     right: 16px;
-    border-radius: 50%;
+    top: 4px;
+    background: red;
 }
 
 .down-left {
+    margin-top: 10px;
+    margin-left: 20px;
     float: left;
-    width: 935.48px;
-    height: 40px;
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -113,31 +198,103 @@ li {
 
 .down-left a {
     color: black;
-    font-size: 16px;
-    padding: 0 20px;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.active {
+    opacity: 0.8;
+    background: #f7f7f7;
 }
 
 .down-right {
-    float: right;
-    display: flex;
     position: relative;
+    margin-top: 13px;
+    margin-left: 116px;
+    float: left;
 }
 
 .down-right .top {
     width: 30px;
-    height: 30px;
+    height: 20px;
     position: absolute;
     top: 4px;
     left: 3px;
-    background: #e2e2e2
+    background: #e2e2e2;
 }
 
 .down-right .bottom {
-    width: 451px;
+    border: 0;
     height: 30px;
-    padding: 3px 5px 3px 30px;
-    margin-right: 10px;
-    background: #e2e2e2
+    line-height: 30px;
+    outline: none;
+    width: 400px;
+    padding-left: 30px;
+    color: #000;
+    font-size: 14px;
+    background: #e2e2e2;
+}
+
+
+/*二级菜单  */
+
+.hideboxking {
+    background: #f7f7f7;
+    padding: 40px 0;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+}
+
+.hidebox {
+    display: none;
+}
+
+.hidebox a {
+    color: black;
+}
+
+.box-center {
+    overflow: hidden;
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.center {
+    min-height: 260px;
+    border-right: 1px solid #e5e5e5;
+    margin-left: -1px;
+    float: left;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.ulwap {
+    float: left;
+    padding: 0 10px;
+}
+
+.ulwap .tis {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.ulwap li {
+    margin: 10px 0;
+}
+
+.center1 li>* {
+    font-size: 12px !important;
+    text-align: left;
+    height: auto;
+    line-height: 14px;
+    padding: 2px 0;
+    color: #000;
 }
 
 
@@ -206,6 +363,7 @@ li {
 }
 
 .listaa {
+    position: relative;
     width: 500px;
     height: 130px;
     margin-top: 10px;
@@ -213,13 +371,54 @@ li {
 
 .listbb {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .listbb li {
-    width: 102px;
-    height: 122px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.listbb li img {
+    width: 100%;
+    height: 100%;
+}
+
+.listbtnl,
+.listbtnr {
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+    width: 16px;
+    background-color: #eee;
+    height: 64px;
+    line-height: 100px;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    height: 100px;
+}
+
+.listbtnr a {
+    color: #ccc;
+    cursor: default;
+}
+
+.listbtnl a {
+    color: #ccc;
+    cursor: default;
+}
+
+.listbtnl {
+    left: 0px
+}
+
+.listbtnr {
+    right: 0px;
 }
 
 
@@ -460,7 +659,7 @@ li {
     width: 60px;
     height: auto;
     z-index: 9;
-    margin-top: -5%;
+    margin-top: 1%;
 }
 
 .f-box .f-top {
@@ -472,14 +671,61 @@ li {
     margin-bottom: 1px;
 }
 
-.f-box .f-top div {
+
+/* 导航栏隐藏的盒子 */
+
+#ewm-l {
+    position: absolute;
+    height: 186px;
+    width: 156px;
+    right: 61px;
+    top: -63px;
+    background: #333;
+    opacity: 0.9;
+    display: none;
+}
+
+#ewm-l div {
+    width: 110px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#ewm-l img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 9px;
+    display: block
+}
+
+#ewm-l p {
+    margin: 0;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.f-box .f-top .nav-top {
     height: 60px;
     width: 100%;
     line-height: 60px;
-    text-align: center;
     position: relative;
     margin-bottom: 1px;
     background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-nav>div .nav-background {
+    height: 60px;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    top: 0;
 }
 
 .f-box .f-top span {

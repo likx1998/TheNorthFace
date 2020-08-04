@@ -3,7 +3,7 @@
 include "data.php";//引入数据库
 header('Access-Control-Allow-Origin:*');//任意域名访问
 header('Access-Control-Allow-Method:POST,GET');//允许的请求方式
-$pagesize = 12; //单个页面展示的数据条数，自由设置
+$pagesize = 30; //单个页面展示的数据条数，自由设置
 
 $sql = "select * from list"; //获取所有的数据
 
