@@ -16,11 +16,21 @@ li {
     list-style: none;
 }
 
+.oboxtop {
+    height: 80px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 .top-nav {
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     overflow: hidden;
-    margin-bottom: 5px;
+    background: #fff;
+    z-index: 9999;
 }
 
 .top-nav a {
@@ -101,22 +111,35 @@ li {
 
 /* 购物车隐藏盒子 */
 
-.the-right .car .s-box {
+.s-box {
     width: 300px;
     height: 580px;
     position: fixed;
     right: 0;
     background: #f7f7f7;
     top: 40px;
-    z-index: 9999999999;
+    z-index: 2;
     display: none;
 }
 
-.the-right .car .s-box i {
+.s-box i {
     font-style: normal
 }
 
-.the-right .car .s-box div {
+.s-box .picbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.s-box.picbox {
+    display: none;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e5e5e5;
+    box-sizing: content-box;
+}
+
+.s-box .check {
     width: 86%;
     margin: 10px auto;
     text-align: center;
@@ -124,9 +147,11 @@ li {
     background: #e40012;
     color: #fff;
     font-size: 16px;
+    height: 30px;
+    line-height: 30px;
 }
 
-.the-right .car .s-box p {
+.s-box p {
     display: block;
     width: 90%;
     text-align: center;
@@ -135,7 +160,7 @@ li {
     color: #767676;
 }
 
-.the-right .car .s-box .closebtn {
+.s-box .closebtn {
     border: 1px solid black;
     color: #767676;
     position: absolute;
@@ -163,9 +188,9 @@ li {
 
 .down-left {
     margin-top: 10px;
+    margin-left: 20px;
     float: left;
     position: relative;
-    width: 800px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -177,7 +202,7 @@ li {
     padding: 10px 20px;
 }
 
-.down-left a:hover {
+.active {
     opacity: 0.8;
     background: #f7f7f7;
 }
@@ -185,7 +210,7 @@ li {
 .down-right {
     position: relative;
     margin-top: 13px;
-    margin-left: 10px;
+    margin-left: 116px;
     float: left;
 }
 
@@ -213,8 +238,7 @@ li {
 
 /*二级菜单  */
 
-.hidebox {
-    display: none;
+.hideboxking {
     background: #f7f7f7;
     padding: 40px 0;
     position: fixed;
@@ -223,6 +247,15 @@ li {
     right: 0;
     overflow: hidden;
     z-index: 999;
+    display: none;
+}
+
+.hidebox {
+    display: none;
+}
+
+.hidebox a {
+    color: black;
 }
 
 .box-center {
@@ -270,7 +303,7 @@ li {
 .contain {
     width: 1070px;
     padding: 0 15px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .bigbox {
@@ -304,7 +337,7 @@ li {
 }
 
 .fa::before {
-    content: "↓"
+    content: '↓'
 }
 
 .list {
@@ -408,7 +441,7 @@ li {
 }
 
 .product-list li {
-    padding: 0 6px;
+    padding: 15px;
     margin: 20px 0;
     width: 33.33%;
     float: left;
@@ -416,8 +449,8 @@ li {
     box-sizing: border-box
 }
 
-.product-list li {
-    padding: 15px;
+.product-list ul {
+    overflow: hidden;
 }
 
 .product-list li img {
@@ -590,4 +623,100 @@ li {
     padding: 0 10px;
     color: #707070;
     text-align: center;
+}
+
+
+/* 固定定位 */
+
+.f-box {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 60px;
+    height: auto;
+    z-index: 9;
+    margin-top: 1%;
+}
+
+.f-box .f-top {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+
+/* 导航栏隐藏的盒子 */
+
+#ewm-l {
+    position: absolute;
+    height: 186px;
+    width: 156px;
+    right: 61px;
+    top: -63px;
+    background: #333;
+    opacity: 0.9;
+    display: none;
+}
+
+#ewm-l div {
+    width: 110px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#ewm-l img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 9px;
+    display: block
+}
+
+#ewm-l p {
+    margin: 0;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.f-box .f-top .nav-top {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    position: relative;
+    margin-bottom: 1px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-nav>div .nav-background {
+    height: 60px;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    top: 0;
+}
+
+.f-box .f-top span {
+    border-radius: 6px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-box .f-top span img {
+    width: 100%;
+    height: 100%;
+}
+
+.f-box .f-top span a {
+    width: 42px;
+    height: 37px;
 }

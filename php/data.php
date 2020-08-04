@@ -9,3 +9,4 @@ $conn = @new mysqli(HOST,USERNAME,PASSWORD,DBNAME);
 if($conn->connect_error){//如果上面的数据库连接出错，显示下面的错误。
     die('数据库连接失败'.$conn->connect_error);
 }
+$conn->query('SET NAMES UTF8');

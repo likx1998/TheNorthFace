@@ -6,53 +6,327 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>列表页</title>
     <link rel="stylesheet" href="css/list.css">
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" currentmod="list"></script>
 </head>
 
 <body>
     <!-- 导航栏 -->
-    <div class='top-nav'>
-        <div class="logo">
-            <a href="index1.html">
-                <img src="https://img2.thenorthface.com.cn/public/images/3b/f1/91/6bdef2c076e3bea65a9b033f8f58c360c0f319d8.jpg?1564465758#w" alt="">
-            </a>
-        </div>
-        <div class="nav-right">
-            <div class="on-nav">
-                <div class="the-left">
-                    <a href="" class="one">
-                       官方商城Shop
-                    </a>
-                    <a href="">
-                        探索北面Exploration
-                    </a>
-                    <a href="">
-                       VIPeak
-                    </a>
+    <div class="oboxtop">
+        <div class='top-nav'>
+            <div class="logo">
+                <div>
+                    <img src="https://img2.thenorthface.com.cn/public/images/3b/f1/91/6bdef2c076e3bea65a9b033f8f58c360c0f319d8.jpg?1564465758#w" alt="">
                 </div>
-                <div class="the-right">
-                    <a href="">加入/登录VIPeak</a>
-                    <a href="">门店查询</a>
-                    <a href="">手机商城</a>
-                    <a href="">CN</a>
-                    <a href="" class="car">
-                        <img src="https://www.thenorthface.com.cn/themes/tnf/images/cart.png" alt="">
-                        <span></span>
-                    </a>
+
+
+            </div>
+            <div class="nav-right">
+                <div class="on-nav">
+                    <div class="the-left">
+                        <a href="" class="one">
+                           官方商城Shop
+                        </a>
+                        <a href="">
+                            探索北面Exploration
+                        </a>
+                        <a href="" style="font-weight: bold;">
+                            <span style="color: red;">VIP</span>eak
+                        </a>
+                    </div>
+                    <div class="the-right">
+                        <a href="">加入/登录VIPeak</a>
+                        <a href="">门店查询</a>
+                        <a href="">手机商城</a>
+                        <a href="">CN</a>
+                        <a href="" class="car">
+                            <img src="https://www.thenorthface.com.cn/themes/tnf/images/cart.png" alt="">
+                            <span class="yuan">0</span>
+                        </a>
+                        <!-- 隐藏的菜单点击进入购物车 -->
+                        <div class="s-box">
+                            <i class="closebtn">x</i>
+                            <div class="picbox">
+                                <img src="" alt="">
+                            </div>
+
+                            <p>购物车还没选商品，赶紧选购吧！</p>
+                            <div class="check">查看购物车</div>
+                        </div>
+                    </div>
+                    <div class="down-left">
+                        <a href="" class="active">全部商品</a>
+                        <a href=" ">男氏</a>
+                        <a href=" ">女式</a>
+                        <a href=" ">鞋类</a>
+                        <a href=" ">装备配件</a>
+                        <a href=" ">Urban Exploration</a>
+                        <a href=" ">童装</a>
+                        <a href=" ">场景</a>
+                    </div>
+                    <!-- 点击显示盒子二级菜单进列表页 -->
+                    <div class="hideboxking">
+                        <div class="hidebox ">
+                            <div class="box-center">
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="list2.html" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="list2.html" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="list2.html" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidebox">
+                            <div class="box-center">
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="">上装</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">羽绒衣</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">卫衣</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">冲锋衣</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="">下装</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">冲锋裤</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">短裤</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">短裙</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidebox">
+                            <div class="box-center">
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="">下装</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">羽绒裤</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">卫裤</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">冲锋裤</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="">下装</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">冲锋裤</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">短裤</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">短裙</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="ulwap">
+                                        <ul>
+                                            <li class="tis">
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="" style="font-size: 12px;">新品系列</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="down-right">
+                        <input type="submit" value="搜索" class="top">
+                        <input type="text" class="bottom">
+                    </form>
                 </div>
-                <div class="down-left">
-                    <a href="">全部商品</a>
-                    <a href=" ">男氏</a>
-                    <a href=" ">女式</a>
-                    <a href=" ">鞋类</a>
-                    <a href=" ">装备配件</a>
-                    <a href=" ">Urban Exploration</a>
-                    <a href=" ">童装</a>
-                    <a href=" ">场景</a>
-                </div>
-                <form action="" class="down-right">
-                    <input type="submit" value="搜索" class="top">
-                    <input type="text" class="bottom">
-                </form>
             </div>
         </div>
     </div>
@@ -205,20 +479,15 @@
             </div>
             <!-- 重点渲染 -->
             <div class="product-list">
-                <div class="product-list">
-                    <ul>
-                        <li>
-                            <img src="https://img3.thenorthface.com.cn/public/images/a3/e8/49/adc736943d01bcbe4ff44ecd538fb1d6da7e24fa.jpg?1595560865#h" alt="">
-                            <span>TheNorthFace北面抓绒衣男户外舒适保暖上新|49AE</span>
-                            <p>￥698.00 </p>
-                        </li>
-                    </ul>
-                </div>
+
+                <!-- 渲染的列表 -->
+
+
             </div>
             <div class="anniu">
                 <a href="">首页</a>
                 <a href="">上一页</a>
-                <a href="">1/4</a>
+                <a href="">1/3</a>
                 <a href="">下一页</a>
             </div>
         </div>
@@ -301,6 +570,62 @@
 
         </div>
 
+    </div>
+    <!-- 固定定位 -->
+    <div class="f-box">
+        <div class="f-top">
+            <div class="nav-top">
+                <span>
+                        <a href="javascript:;">
+                            <img src="https://www.thenorthface.com.cn/themes/tnf/images/suves.png" alt="">
+                        </a>
+                        
+                    </span>
+            </div>
+            <div class="nav-top">
+                <div class="nav-background">
+                    <span>
+                            <a href="javascript:;">
+                                <img src="https://www.thenorthface.com.cn/themes/tnf/images/wechatgreen.png" alt="">
+                            </a>   
+                        </span>
+
+                </div>
+                <div id="ewm-l">
+                    <div>
+                        <img src="https://www.thenorthface.com.cn/themes/tnf/images/ewm-l.png" alt="">
+                    </div>
+                    <p>扫描二维码</p>
+                    <p>关注北面官方微信</p>
+                </div>
+            </div>
+            <div class="nav-top">
+                <div class="nav-background">
+                    <span>
+                            <a href="javascript:;">
+                                <img src="https://www.thenorthface.com.cn/themes/tnf/images/righticon_01.png" alt="">
+                            </a>
+                        </span>
+                </div>
+                <!-- 导航栏隐藏的盒子 -->
+                <div id="ewm-l">
+                    <div>
+                        <img src="https://www.thenorthface.com.cn/themes/tnf/images/ewm-l.png" alt="">
+                    </div>
+                    <p>关注微信</p>
+                    <p>加入野练</p>
+                </div>
+            </div>
+
+            <div class="nav-top">
+                <span>
+                        <!-- 点击返回顶部 -->
+                        <a href="javascript:;" class="aking">
+                            <img src="https://www.thenorthface.com.cn/themes/tnf/images/top.png" alt="">
+                        </a>  
+                    </span>
+            </div>
+        </div>
     </div>
 </body>
 
