@@ -29,6 +29,7 @@ define(['index'], function(index) { //依赖index模块的功能
                         this.str += '</ul>'
                         this.plist.html(this.str);
                     })
+                    alert(1)
                 }
             }
             new Rendering().init()
