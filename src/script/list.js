@@ -20,7 +20,9 @@ define(['index', 'jquery.pagination'], function(index, p) { //依赖index模块�
                         console.log(data)
                         this.str = '<ul>'
                         $.each(data, (index, value) => {
-                            this.str += `<li>
+                            this.str += `
+                            <a href="details.html?sid=${value.sid}">
+                            <li>
                             <img data-original="${value.url}"class="lazy" width="215"height="215"> 
                             <span>${value.title}</span>  
                             <p>${value.price}</p>
@@ -32,12 +34,14 @@ define(['index', 'jquery.pagination'], function(index, p) { //依赖index模块�
                             $("img.lazy").lazyload({ effect: "fadeIn" });
                         });
                     })
+
+
                     this.arryd = [] //默认排序的数组
                     this.array = [] //排序过的数组
                     this.prev = null;
                     this.next = null;
                     $('.product-list li').each(function(index, value) {
-                        this.arryd[index] = $(this);
+                        this.arryd[index] = $(this); //10个li
                         this.array[index] = $(this)
                     })
                     $('.page').pagination({
@@ -48,22 +52,26 @@ define(['index', 'jquery.pagination'], function(index, p) { //依赖index模块�
                         homePage: '首页',
                         endPage: '尾页',
                         callback: (api) => {
-                            console.log(api.getCurrent());
                             $.ajax({
                                 url: 'http://localhost/super/TheNorthFace/php/list.php',
+                                dataType: 'json',
                                 data: {
-                                    page: api.getCurrent() //把当前点击的页面
+                                    page: api.getCurrent() //把当前点击的页
                                 },
-                                dataType: 'json'
                             }).done((data) => {
                                 console.log(data)
                                 this.str = '<ul>'
                                 $.each(data, (index, value) => {
-                                    this.str += `<li>
+
+                                    this.str += `
+                                    <a href="details.html?sid=${value.sid}">
+                                    <li>
                                     <img data-original="${value.url}"class="lazy" width="215"height="215"> 
                                     <span>${value.title}</span>  
                                     <p>${value.price}</p>
-                                    </li>`;
+                                    </li>
+                                    </a>
+                                    `;
                                 })
                                 this.str += '</ul>'
                                 this.plist.html(this.str);
