@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册</title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" currentmod="login"></script>
 </head>
 
 <body>
@@ -34,26 +35,29 @@
                                     快速登录/注册
 
                                 </div>
-                                <form action="">
 
+                                <form action="http://localhost/super/TheNorthFace/php/login.php" method="POST" class="form">
                                     <ul class="inputbox">
                                         <!-- 用户名 -->
                                         <li class="username">
-                                            <input type="text" value="请输入用户名">
+                                            <input type="text" placeholder="请输入用户名" name="username">
+                                            <span class="caution-content">5</span>
                                         </li>
                                         <!-- 密码框 -->
                                         <li class="passwod">
-                                            <input type="text" value="请输入密码">
+                                            <input type="text" placeholder="请输入密码" name="password">
+                                            <span class="caution-content">5</span>
                                         </li>
                                         <!-- 验证码 -->
                                         <li class="formitem">
-                                            <input type="text" value="输入验证码">
-                                            <img src="" alt="">
-                                            <a href="">看不清换一个</a>
+                                            <input type="text" value="">
+                                            <em>1234</em>
+                                            <a href="javascipt:;">看不清换一个</a>
+                                            <span class="caution-content">5</span>
                                         </li>
                                         <li>
-                                            <button type="submit" class="btn">
-                                                <span>
+                                            <button type="submit" class="btn" name="submit">
+                                            <span>
                                                 立即登录   
                                                 </span>
                                             </button>
@@ -61,8 +65,8 @@
                                     </ul>
                                 </form>
                                 <div class="Lr">
-                                    <span><a href="">快速登录</a></span>
-                                    <span><a href="">账号登录</a></span>
+                                    <span><a href="login.html">注册</a></span>
+                                    <span><a href="register.html">账号登录</a></span>
                                 </div>
                             </div>
                         </div>

@@ -11,8 +11,7 @@ a {
     text-decoration: none;
     border: none;
     color: #000000;
-    font-size: 14px;
-    padding: 10px 19px;
+    font-size: 13px;
     margin-right: 0;
 }
 
@@ -92,7 +91,7 @@ a {
 }
 
 .middle .layout .page .logbox .inputbox li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     color: #666;
     font-size: 100%;
@@ -118,6 +117,15 @@ a {
     color: #A5A5A5;
 }
 
+.caution-content {
+    background: #efe5e2;
+    padding: 0 10px;
+    white-space: nowrap;
+    color: #C9192E;
+    font-size: 12px;
+    display: none;
+}
+
 .formitem input {
     width: 100px;
     height: 36px;
@@ -126,6 +134,18 @@ a {
     padding-left: 15px;
     font-size: 14px;
     color: #A5A5A5;
+}
+
+.formitem em {
+    display: inline-block;
+    width: 65px;
+    margin-left: 5px;
+    vertical-align: middle;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #C94236;
 }
 
 .middle .layout .page .logbox .inputbox li .btn {
