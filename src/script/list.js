@@ -149,6 +149,7 @@ define(['index', 'jquery.pagination'], function(index, p) { //依赖index模块�
                 init() {
                     this.btn.on('click', (ev) => {
                         let parent = $(ev.target).parentsUntil('.bigbox').eq(2).find('ul').toggleClass('hide');
+                        console.log(a);
                     })
                 }
 
