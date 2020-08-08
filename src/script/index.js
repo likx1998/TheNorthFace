@@ -1,6 +1,24 @@
 define([], function() {
     return {
         init: function() {
+            // //取cookie
+            if ($.cookie('username')) { //判断有无cookie
+                $('.admin').show()
+                $('.admin span').html($.cookie('username'))
+                $('.shouw').hide()
+            }
+
+            $('.admin a').on('click', function() {
+                $('.shouw').show()
+                $('.admin').hide()
+                $.cookie('username', null, {
+                    expires: -1,
+                    path: '/'
+                })
+            })
+
+
+
             const $downleft = $('.down-left a') //a标签那些按钮
             const $hideboxking = $('.hideboxking') //最外面的盒子
             const $hidebox = $('.hidebox') //二级菜单
@@ -125,30 +143,30 @@ define([], function() {
                 }
                 init() {
                     this.span.on('click', (ev) => {
-                            let curr = $(ev.target).index() //存取当前点击的索引，理解为新索引
-                            if (curr > this.index) { //新索引大于旧索引
-                                this.move(-1)
-                                this.index = curr //把新索引赋值给旧索引
-                                this.form.eq(curr).css({ //让代表当前新索引的图片进来，看上去就像2张一起移动
-                                    left: this.form.width()
-                                }).animate({
-                                    left: 0
-                                })
-                            } else if (curr < this.index) {
-                                this.move(1) //回调函数
-                                this.form.eq(this.index).animate({
-                                    left: 0
-                                }).css({
-                                    left: this.form.width()
-                                })
-                            }
-                            this.span.eq(curr).addClass('active1').siblings().removeClass('active1');
-                            console.log(`click` + this.index);
+                        let curr = $(ev.target).index() //存取当前点击的索引，理解为新索引
+                        if (curr > this.index) { //新索引大于旧索引
+                            this.move(-1)
+                            this.index = curr //把新索引赋值给旧索引
+                            this.form.eq(curr).css({ //让代表当前新索引的图片进来，看上去就像2张一起移动
+                                left: this.form.width()
+                            }).animate({
+                                left: 0
+                            })
+                        } else if (curr < this.index) {
+                            this.move(1) //回调函数
+                            this.form.eq(this.index).animate({
+                                left: 0
+                            }).css({
+                                left: this.form.width()
+                            })
+                        }
+                        this.span.eq(curr).addClass('active1').siblings().removeClass('active1');
 
 
 
-                        })
-                        // console.log(this.index);
+
+                    })
+
                     this.boxright.on('click', () => {
                         clearTimeout(this.time)
                         this.time = setTimeout(() => {
@@ -164,8 +182,7 @@ define([], function() {
                             }).animate({
                                 left: 0
                             })
-                            console.log(`
-                                                        btn ` + this.index);
+
                             this.span.eq(this.index).addClass('active1').siblings().removeClass('active1');
                         }, 500);
                     })
@@ -183,8 +200,8 @@ define([], function() {
                             left: 0
                         })
                         this.span.eq(this.index).addClass('active1').siblings().removeClass('active1');
-                        console.log(`
-                                                        btn ` + this.index);
+                        // console.log(`
+                        //                                 btn ` + this.index);
                     });
 
                     setInterval(() => { //3秒点一次

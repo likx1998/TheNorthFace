@@ -14,12 +14,12 @@ if(isset($_POST['name'])){//是否重名
 if(isset($_POST['submit'])){
  $username=$_POST['username'];
 echo $username;
- $password=($_POST['password']);
+ $password=sha1($_POST['password']);
     echo $password;
     $sql = "INSERT INTO login VALUES (null, '$username', '$password')";
 // $conn->query("insert login values(null,'$username','$password'");
 $conn->query($sql);
-  header('location:http://localhost/super/TheNorthFace/src/register.html');
+  header('location:http://10.31.163.49/super/TheNorthFace/src/register.html');
 }
 
 

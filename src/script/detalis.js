@@ -15,7 +15,7 @@ define(['index'], function(index) {
                 init() {
                     // 渲染
                     $.ajax({
-                        url: 'http://localhost/super/TheNorthFace/php/detalis.php',
+                        url: 'http://10.31.163.49//super/TheNorthFace/php/detalis.php',
                         type: 'GET',
                         dataType: 'json',
                         data: { sid: this.sid }
@@ -51,7 +51,7 @@ define(['index'], function(index) {
                     this.push = $('.push') //加按钮
                     this.value = $('.value input') //值
                     this.btnb = $('.btn-b') //加入购物车的按钮
-
+                    this.pics = $('.s-box p') //隐藏的盒子
                     this.sidarr = [] //存放sid
                     this.numarr = [] //存放数量
                     this.num = 1 //数量的值
@@ -72,6 +72,8 @@ define(['index'], function(index) {
 
                     });
                     this.btnb.on('click', () => {
+                        $('.s-box p').html('已加入购物车')
+                        $('.s-box').show()
                         this.cookie()
                         if ($.inArray(this.sid, this.sidarr) === -1) { //如果第一次获取到的sid和数量一起push，如果不是那让数量让他原来的加上新获取到的
                             this.sidarr.push(this.sid)
@@ -93,6 +95,8 @@ define(['index'], function(index) {
                         }
                         console.log(this.sidarr);
                         console.log(this.numarr);
+
+
                     })
                 }
                 cookie() { //判断cookie是否存在存在转成数值

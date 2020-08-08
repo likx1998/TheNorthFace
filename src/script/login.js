@@ -12,24 +12,25 @@ define([], function() {
             let possflag = false //密码
             $form = $('.form')
             $username.on('blur', function(ev) { //移出开始传数据
-                $.ajax({
-                    type: 'POST',
-                    url: 'http://localhost/super/TheNorthFace/php/login.php',
-                    data: {
-                        name: $(ev.target).val()
-                    }
-                }).done((function(data) {
-                    if (!data) {
-                        $('.caution-content').eq(0).show()
-                        $('.caution-content').eq(0).html('√').css('color', 'green')
-                        userflag = true //用户名判断
-                    } else {
-                        $('.caution-content').eq(0).show()
-                        $('.caution-content').eq(0).html('用户名重名').css('color', 'red')
-                        userflag = false //用户名判断
-                    }
-                }))
-            })
+                    $.ajax({
+                        type: 'POST',
+                        url: 'http://10.31.163.49//super/TheNorthFace/php/login.php',
+                        data: {
+                            name: $(ev.target).val()
+                        }
+                    }).done((function(data) {
+                        if (!data) {
+                            $('.caution-content').eq(0).show()
+                            $('.caution-content').eq(0).html('√').css('color', 'green')
+                            userflag = true //用户名判断
+                        } else {
+                            $('.caution-content').eq(0).show()
+                            $('.caution-content').eq(0).html('用户名重名').css('color', 'red')
+                            userflag = false //用户名判断
+                        }
+                    }))
+                })
+                //密码移出解析
             $passwod.on('blur', function() {
                 if ($passwod.val() !== '') {
                     possflag = true

@@ -1,6 +1,5 @@
 <?php
-include "deta.php";
-
+include "data.php";
 //检测用户名和密码是否都已经传入
 if(isset($_POST['name']) && isset($_POST['pass'])){
     $name = $_POST['name'];
